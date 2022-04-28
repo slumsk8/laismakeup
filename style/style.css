@@ -1,0 +1,140 @@
+@import "http://fonts.googleapis.com/icon?family=Material+Icons";
+@import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css";
+@font-face{
+  font-family: Apollo;
+  src: url(../fonts/APOLLO.otf);
+}
+body {
+  background: #fff;
+  letter-spacing: 3px;
+  font-family: Apollo;
+}
+
+/* EFEITO */
+@keyframes surgir{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 50%;
+  }
+  100%{
+    opacity: 100%;
+  }
+}
+
+.container {  
+  background: #fff;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  height: auto;
+  animation: surgir .6s linear;
+}
+
+
+
+/* NAV BAR MENU */
+
+.navbar-fixed nav {       
+  text-transform: uppercase;
+  background: #000;  
+  border-bottom: 1px solid #000;
+  /* background: linear-gradient(#ee6e73, #80319c); */
+  display: grid;
+  align-content: center;
+  padding: 0px;
+  height: 8%;
+}
+
+.right{
+  margin-right: 5%;
+}
+.right li a{  
+  color: #fff;
+}
+.right li a:hover{
+  background: rgb(180,50,76);
+}
+.navbar-fixed nav .brand-logo{
+  letter-spacing: 5px !important;
+  margin-left: 2%;
+  color: #fff;
+  font-size: clamp(1rem, 2vw, 8rem);
+}
+
+.footer{
+  letter-spacing: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+.footer span a{
+  color: #fff;
+}
+.footer span .email:hover{
+  color: orange;
+}
+.footer span .whatsapp:hover{
+  color: green;
+}
+/* SIDE BAR e MOBILE */
+@media (max-width: 800px){   
+  h1{
+    font-size: 24px !important;
+  }    
+  /* LOGO */  
+   .navbar-fixed nav .brand-logo{    
+    text-align: center; 
+    width: 100%;        
+    font-size: clamp(1rem, 7vw, 8rem);    
+  }  
+  
+  /* MENU */ 
+  .sidenav {          
+    width: 70%; 
+    height: 100vh;     
+    opacity: 95% !important;    
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 10px;    
+    background: linear-gradient(#000, #fff);    
+  }   
+  
+  .sidenav li {
+    border: 1px solid #fff;    
+    width: 90%;
+  }
+  .sidenav li a{        
+    text-align: center;
+    font-size: clamp(1rem, .5vw, 1rem);
+    color: #fff !important;
+  }
+  .sidenav-overlay {
+    display: none !important;
+    opacity: 0% !important;
+  }
+  .sidenav-trigger{
+    color: #fff;
+  }
+
+  .footer{    
+    padding: 5px;    
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #000;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+  }
+  .footer span a{
+    color: #fff;
+  }
+  .footer span a:hover{
+    columns: green;
+  }
+ 
+}

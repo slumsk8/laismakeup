@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+/* PÁGINA NOIVAS */
+.container{     
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+h1{       
+  font-size: clamp(1rem, 10vw, 3rem);
+  margin-top: 0;  
+  text-align: center;
+  text-transform: uppercase;
+}
+.studio {  
+  padding: 30px;  
+  display: grid;  
+  background: transparent;  
+  grid-template-columns: 50%;
+  grid-template-areas: "photo text";
+}
+.pstudio{
+  width: 90%;
+}
+.studio p{
+  text-indent: 30px;
+  font-size: clamp(1rem, 1vw, 4rem);
+  text-align: justify;  
+}
+
+.studio .photo-new {
+  grid-area: photo;  
+}
+.studio .photo-new-1 {
+  margin: 0 auto;
+  grid-area: text;  
+}
+.studio .photo-new-2 {
+  grid-area: photo;  
+}
+.studio .photo-new-3 {
+  grid-area: text;  
+}
+.studio .photo-new-4 {
+  grid-area: photo;  
+}
+.studio .photo-new-5 {
+  grid-area: text;  
+}
+.studio .photo-new-6 {
+  grid-area: photo;  
+}
+.studio .photo-new-7 {
+  grid-area: text;  
+}
+.studio .photo-new-8 {
+  grid-area: photo;  
+}
+.studio .photo-new-9 {
+  grid-area: text;  
+}
+.texto{
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  font-size: clamp(1rem, 1vw, 4rem);  
+}
+.studio .texto1 {  
+  grid-area: text;  
+}
+
+.studio .texto2 {  
+  grid-area: photo;  
+}
+
+
+/* MOBILE */
+@media (max-width: 800px){
+  h1{
+    font-size: 24px !important;
+  }
+  /* CONTEUDO */
+  .studio {
+    padding: 10px;  
+    display: flex;  
+    flex-direction: column;            
+  }
+  .studio .pstudio {    
+    width: 100%;
+  }  
+  
+  .studio .texto1 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+  
+  .studio .texto2 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+  
+  .studio .texto3 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+}
+

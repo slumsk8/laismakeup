@@ -1,0 +1,124 @@
+*{
+  margin: 0;
+  padding: 0;  
+}
+
+/* PÁGINA NOIVAS */
+.container{     
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+.eu{
+  display: none;
+}
+h1{       
+  font-size: clamp(1rem, 10vw, 3rem);
+  margin-top: 0;  
+  text-align: center;
+  text-transform: uppercase;
+}
+.projetos {  
+  padding: 30px;  
+  display: grid;  
+  background: transparent;  
+  grid-template-columns: 50% 50%;
+  grid-template-areas: "photo text";
+}
+.projetos p{
+  text-indent: 30px;
+  font-size: clamp(1rem, 1vw, 4rem);
+  text-align: justify; 
+}
+.pprojetos{
+  width: 100%;
+}
+.projetos .photo-new {
+  grid-area: photo;
+  
+}
+.projetos .photo-new-1 {
+  margin: 0 auto;
+  grid-area: text;  
+}
+.projetos .photo-new-2 {
+  grid-area: photo;  
+}
+.projetos .photo-new-3 {
+  grid-area: text;  
+}
+
+.texto{
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  padding: 20px;
+  font-size: clamp(1rem, 1vw, 4rem);  
+}
+.projetos .texto1 {
+  grid-area: text;
+}
+
+.projetos .texto2 {
+  grid-area: photo;  
+}
+
+.projetos .texto3 {  
+  grid-area: text;  
+}
+.projetos .texto4 {  
+  grid-area: photo;  
+}
+
+/* MOBILE */
+@media (max-width: 800px){
+  h1{
+    font-size: 24px !important;
+  }
+  /* CONTEUDO */
+  .projetos {
+    padding: 10px;  
+    display: flex;  
+    flex-direction: column;            
+  }
+  .projetos .pprojetos {    
+    width: 100%;
+  }  
+  
+  .projetos .texto1 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+  
+  .projetos .texto2 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+  
+  .projetos .texto3 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+  .projetos .texto4 {
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    padding: 20px;
+    grid-area: text;
+    font-size: clamp(1rem, 1vw, 4rem);  
+  }
+}
+
